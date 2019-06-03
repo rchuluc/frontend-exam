@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap");
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb { 
+  border-radius: 2px;
+
+  background: #A99E7E;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(45, 20%, 38%); 
+}
+
+.btn{
+  height: 100%;
+  padding: 11px 35px;
+  text-transform: uppercase;
+  color: #A99E7E;
+  background: none;
+  border: 2px solid #A99E7E;
+  cursor: pointer;
+  transition: 175ms background ease-in;
+}
+
+.btn:hover{
+  color: #A99E7E;
+  background-color: hsl(45, 20%, 28%);
+  border: 2px solid hsl(45, 20%, 38%);
+  cursor: pointer;
+}
+
+.btn:active{
+  color: #A99E7E;
+  background-color: hsl(45, 20%, 48%);
+  border: 2px solid hsl(45, 20%, 38%);
+  cursor: pointer;
+}
+
+.video-thumbnail {
+  height: 222px;
+  width: 375px;
+  display: flex;
+  flex-flow: column-reverse wrap;
+}
+
+.video-label {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.video-card {
+  height: 232px;
+  width: 385px;
+  background: #1d1a1a;
+  border: 1px solid #a99e7e;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.video-grid {
+  padding-left: 20px;
+  padding-bottom: 58px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.video-grid .video-card {
+  margin: 0 20px 48px 20px;
+}
+
+.content{
+  padding-top: 58px;
+  overflow-y: scroll;
+  background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 98.3%);
+  height: 100vh;
+  width: 900px;
+}
+
+
+body {
+  background-size: cover;
+  background-image: url(assets/background.png);
+  overflow: hidden;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

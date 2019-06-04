@@ -1,48 +1,85 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap");
 
+body {
+  display: flex;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
 ::-webkit-scrollbar {
   width: 5px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0); 
+  background: rgba(0, 0, 0, 0);
 }
- 
+
 /* Handle */
-::-webkit-scrollbar-thumb { 
+::-webkit-scrollbar-thumb {
   border-radius: 2px;
 
-  background: #A99E7E;
+  background: #a99e7e;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: hsl(45, 20%, 38%); 
+  background: hsl(45, 20%, 38%);
 }
 
-.btn{
+.btn {
   height: 100%;
   padding: 11px 35px;
   text-transform: uppercase;
-  color: #A99E7E;
+  color: #a99e7e;
   background: none;
-  border: 2px solid #A99E7E;
+  border: 2px solid #a99e7e;
   cursor: pointer;
   transition: 175ms background ease-in;
 }
 
-.btn:hover{
-  color: #A99E7E;
+.btn:hover {
+  color: #a99e7e;
   background-color: hsl(45, 20%, 28%);
   border: 2px solid hsl(45, 20%, 38%);
   cursor: pointer;
 }
 
-.btn:active{
-  color: #A99E7E;
+.btn:active {
+  color: #a99e7e;
   background-color: hsl(45, 20%, 48%);
   border: 2px solid hsl(45, 20%, 38%);
+  cursor: pointer;
+}
+
+.overlay {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  background: rgba(29, 26, 26, 0.95);
+  height: 100vh;
+  width: 100vw;
+}
+
+.overlay-close-button {
+  position: absolute;
+  align-self: flex-end;
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: white;
+  padding: 24px;
   cursor: pointer;
 }
 
@@ -66,16 +103,23 @@
 }
 
 .video-card {
-  height: 232px;
-  width: 385px;
+  padding: 12px;
   background: #1d1a1a;
   border: 1px solid #a99e7e;
   box-sizing: border-box;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+
+.video-frame {
+  margin: auto;
+  padding: 12px;
+  background: #1d1a1a;
+  border: 1px solid #a99e7e;
+  box-shadow: 0px 0px 50px #000000;
 }
 
 .video-grid {
@@ -90,14 +134,13 @@
   margin: 0 20px 48px 20px;
 }
 
-.content{
+.content {
   padding-top: 58px;
   overflow-y: scroll;
   background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 98.3%);
   height: 100vh;
   width: 900px;
 }
-
 
 body {
   background-size: cover;

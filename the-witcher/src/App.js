@@ -1,15 +1,14 @@
 import React from "react";
 import "./styles.css";
-import VideosList from "./organisms/VideosList";
+import VideoPlayer from "./molecules/VideoPlayer";
+
 
 function App() {
   return (
-    <div className="App">
-      <div className="aside-menu"></div>
-      <div className="content">
+    <div>
 
-      <VideosList />
-      </div>
+        <VideoPlayer videoUrl="https://www.youtube.com/watch?v=Nb78wF1Tkwc" />
+  
     </div>
   );
 }

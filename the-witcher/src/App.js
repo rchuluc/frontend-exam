@@ -1,13 +1,13 @@
 import React from "react";
 import "./styles.css";
-import VideoPlayer from "./molecules/VideoPlayer";
+import HomeTemplate from "./templates/HomeTemplate";
 
 
 function App() {
   return (
-    <div>
+    <div class="bg">
 
-        <VideoPlayer videoUrl="https://www.youtube.com/watch?v=Nb78wF1Tkwc" />
+        <HomeTemplate />
   
     </div>
   );

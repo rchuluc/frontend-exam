@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap");
 
 body {
-  display: flex;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 code {
@@ -36,8 +36,25 @@ code {
   background: hsl(45, 20%, 38%);
 }
 
+.bg {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background-size: cover;
+  background-position: 0 -98px;
+  background-image: radial-gradient(rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.9) 100%), url(assets/background.png);
+  overflow: hidden;
+
+}
+
+.btn-group button{
+  display: inherit;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
 .btn {
-  height: 100%;
+  height: 40px;
   padding: 11px 35px;
   text-transform: uppercase;
   color: #a99e7e;
@@ -45,6 +62,19 @@ code {
   border: 2px solid #a99e7e;
   cursor: pointer;
   transition: 175ms background ease-in;
+}
+
+.btn-transparent {
+  border: none !important;
+  color: white;
+}
+
+.btn-block {
+  width: 80%;
+}
+
+.hide {
+  display: none !important;
 }
 
 .btn:hover {
@@ -62,6 +92,9 @@ code {
 }
 
 .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -103,7 +136,7 @@ code {
 }
 
 .video-card {
-  padding: 12px;
+  padding: 5px;
   background: #1d1a1a;
   border: 1px solid #a99e7e;
   box-sizing: border-box;
@@ -117,35 +150,58 @@ code {
 .video-frame {
   margin: auto;
   padding: 12px;
-  background: #1d1a1a;
+  background: #000000;
   border: 1px solid #a99e7e;
   box-shadow: 0px 0px 50px #000000;
 }
 
 .video-grid {
+  margin-top: 58px;
   padding-left: 20px;
-  padding-bottom: 58px;
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
+  align-items: center;
+  overflow-y: scroll;
+  height: calc(100% - 58px);
+}
+
+.img-logo-menu {
+  width: 80%;
+  height: auto;
+  margin: 25% auto 25%;
 }
 
 .video-grid .video-card {
   margin: 0 20px 48px 20px;
 }
 
-.content {
-  padding-top: 58px;
-  overflow-y: scroll;
-  background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 98.3%);
-  height: 100vh;
-  width: 900px;
+.video-grid button.btn {
+  margin: auto;
 }
 
-body {
-  background-size: cover;
-  background-image: url(assets/background.png);
-  overflow: hidden;
+.content {
+  position: relative;
+  border-left: 1px solid #4C4C4C;
+  padding:0 20px 20px 0;
+  height: 100vh;
+  width: 70vw;
+  background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 98.3%);
+}
+
+.aside {
+  display: flex;
+  flex-flow: column wrap;
+  margin: 0 auto;
+  width: 25vw;
+}
+
+.container {
+  width: 100vw;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+
 }
 
 @keyframes App-logo-spin {

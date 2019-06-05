@@ -8,7 +8,8 @@ const VideoFrame = ({ videoUrl }) => {
   return (
       <div className="video-frame">
           <iframe
-            allowfullscreen="true"
+            id="videoEmbedded"
+            allowFullScreen = {true}
             frameBorder = "0"
             width={width}
             height={height}

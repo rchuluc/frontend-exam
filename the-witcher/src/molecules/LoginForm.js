@@ -1,15 +1,14 @@
-import React from 'react'
-import '../styles.css'
-import Input from '../atoms/Input'
+import React from "react"
+import "../styles.css"
+import Input from "../atoms/Input"
 
 const LoginForm = () => {
-    return(
-        <div>
+  return (
+    <div>
+      <Input label={"Email"} type={"email"} autocomplete={"on"} />
+      <Input label={"Password"} type={"password"} />
+    </div>
+  );
+};
 
-            <Input label={'Email'}/>
-            <Input label={'Password'}/>
-        </div>
-    )
-}
-
-export default LoginForm
+export default LoginForm;

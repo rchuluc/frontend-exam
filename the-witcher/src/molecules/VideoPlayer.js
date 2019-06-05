@@ -1,16 +1,14 @@
-import React from 'react'
-import '../styles.css'
-import VideoFrame from '../atoms/VideoFrame'
-import Overlay from '../atoms/Overlay'
+import React from "react";
+import "../styles.css";
+import VideoFrame from "../atoms/VideoFrame";
+import Overlay from "../atoms/Overlay";
 
-const VideoPlayer = ({
-    videoUrl
-}) => {
-    return(
-        <Overlay>
-            <VideoFrame videoUrl={videoUrl}/>
-        </Overlay>
-    )
-}
+const VideoPlayer = () => {
+  return (
+    <Overlay>
+      <VideoFrame />
+    </Overlay>
+  );
+};
 
-export default VideoPlayer
+export default VideoPlayer;

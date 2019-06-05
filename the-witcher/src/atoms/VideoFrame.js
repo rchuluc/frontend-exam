@@ -1,21 +1,20 @@
 import React from "react";
 import "../styles.css";
 
-const VideoFrame = ({ videoUrl }) => {
+const VideoFrame = () => {
   const width = window.screen.width * 0.65;
-  const height = window.screen.height * 0.60;
+  const height = window.screen.height * 0.6;
 
   return (
-      <div className="video-frame">
-          <iframe
-            id="videoEmbedded"
-            allowFullScreen = {true}
-            frameBorder = "0"
-            width={width}
-            height={height}
-            src={videoUrl}
-          />
-      </div>
+    <div className="video-frame">
+      <iframe
+        id="videoEmbedded"
+        allowFullScreen={true}
+        frameBorder="0"
+        width={width}
+        height={height}
+      />
+    </div>
   );
 };
 

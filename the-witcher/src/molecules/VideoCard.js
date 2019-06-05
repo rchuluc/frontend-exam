@@ -5,7 +5,7 @@ import { handleOpenPlayer } from "../scripts";
 
 const VideoCard = ({ thumbnail, title , videoId}) => {
   return (
-    <div className="video-card" onClick={handleOpenPlayer}>
+    <div className="video-card" onClick={() => handleOpenPlayer(videoId)}>
       <VideoThumb image={thumbnail}>
         <VideoLabel title={title} />
       </VideoThumb>

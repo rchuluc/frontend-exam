@@ -1,13 +1,13 @@
 import React from "react";
 import "./styles.css";
-import HomeTemplate from "./templates/HomeTemplate";
+import LoginTemplate from "./templates/LoginTemplate";
 
 
 function App() {
   return (
-    <div class="bg">
+    <div className="bg">
 
-        <HomeTemplate />
+        <LoginTemplate />
   
     </div>
   );

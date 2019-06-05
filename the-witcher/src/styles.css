@@ -7,7 +7,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
 }
 
 code {
@@ -37,17 +36,53 @@ code {
 }
 
 .bg {
+  position: absolute;
   width: 100vw;
   height: 100vh;
   display: flex;
   background-size: cover;
   background-position: 0 -98px;
-  background-image: radial-gradient(rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.9) 100%), url(assets/background.png);
+  background-image: radial-gradient(
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.9) 100%
+    ),
+    url(assets/background.png);
   overflow: hidden;
-
+  z-index: -100;
 }
 
-.btn-group button{
+.form-input {
+  display: block;
+  border: none;
+  color: white;
+  padding-bottom: 8px;
+  font-size: 0.8rem;
+  line-height: 16px;
+  border-bottom: 1px solid #a99e7e;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.form-input:focus{
+  outline: 0;
+}
+
+.form-label-initial {
+  position: relative;
+  bottom: -1rem;
+  color: #a99e7e;
+  z-index: -1;
+}
+
+.form-label-float {
+  position: relative;
+  bottom: 0;
+  color: #a99e7e;
+  transition: 200ms all ease-out;
+  font-size: 0.9rem;
+  z-index: -1;
+}
+
+.btn-group button {
   display: inherit;
   margin: 0 auto;
   margin-bottom: 2rem;
@@ -182,8 +217,8 @@ code {
 
 .content {
   position: relative;
-  border-left: 1px solid #4C4C4C;
-  padding:0 20px 20px 0;
+  border-left: 1px solid #4c4c4c;
+  padding: 0 20px 20px 0;
   height: 100vh;
   width: 70vw;
   background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 98.3%);
@@ -201,14 +236,4 @@ code {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-end;
-
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

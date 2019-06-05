@@ -43,7 +43,7 @@ code {
   background-size: cover;
   background-position: 0 -98px;
   background-image: radial-gradient(
-      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.5) 0%,
       rgba(0, 0, 0, 0.9) 100%
     ),
     url(assets/background.png);
@@ -62,7 +62,7 @@ code {
   background-color: rgba(0, 0, 0, 0);
 }
 
-.form-input:focus{
+.form-input:focus {
   outline: 0;
 }
 
@@ -70,6 +70,7 @@ code {
   position: relative;
   bottom: -1rem;
   color: #a99e7e;
+  font-size: 0.875rem;
   z-index: -1;
 }
 
@@ -78,8 +79,18 @@ code {
   bottom: 0;
   color: #a99e7e;
   transition: 200ms all ease-out;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   z-index: -1;
+}
+
+.form-group {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+}
+
+.form-group .form-input {
+  margin-bottom: 15px;
 }
 
 .btn-group button {
@@ -91,6 +102,7 @@ code {
 .btn {
   height: 40px;
   padding: 11px 35px;
+  width: fit-content;
   text-transform: uppercase;
   color: #a99e7e;
   background: none;
@@ -110,6 +122,24 @@ code {
 
 .hide {
   display: none !important;
+}
+
+.login-content {
+  display: flex;
+  flex-flow: column wrap;
+  margin: auto;
+}
+
+.login-content button.btn {
+  margin: 50px auto;
+}
+
+.login-content .form-group {
+  margin: 50px auto;
+}
+
+.login-content input.form-input {
+  width: 285px;
 }
 
 .btn:hover {
@@ -205,6 +235,11 @@ code {
   width: 80%;
   height: auto;
   margin: 25% auto 25%;
+}
+
+.img-logo-login {
+  width: 275px;
+  height: auto;
 }
 
 .video-grid .video-card {

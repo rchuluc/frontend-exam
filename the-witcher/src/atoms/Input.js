@@ -4,7 +4,7 @@ import { floatLabel } from '../scripts'
 
 const Input = ({ type, autocomplete, label }) => {
   return (
-    <span className="input-alpha">
+    <div>
       <label className="form-label-initial">{label}</label>
       <input
         className="form-input"
@@ -13,7 +13,7 @@ const Input = ({ type, autocomplete, label }) => {
         type={type}
         autoComplete={autocomplete}
       />
-    </span>
+    </div>
   );
 };
 

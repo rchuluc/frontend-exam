@@ -1,19 +1,26 @@
-import React from "react";
-import VideoCard from "../molecules/VideoCard";
-import bg from "../assets/image.png";
+import React from 'react'
+import VideoCard from '../molecules/VideoCard'
+import { getMoreVideos } from '../scripts'
 
-const VideosList = ({ videoId }) => {
+const VideosList = ({ videos }) => {
   return (
     <div className="video-grid">
-      <VideoCard
-        thumbnail={bg}
-        title={"The Witcher 3: Wild Hunt - Title Reveal"}
-        videoId={videoId}
-      />
-
-      <button className="btn">load more</button>
+      {videos.items.map(video => (
+        <VideoCard
+          thumbnail={video.snippet.thumbnails.high.url}
+          title={video.snippet.title}
+          videoId={video.snippet.resourceId.videoId}
+        />
+      ))}
+      <button
+        id="loadMore"
+        className="btn"
+        onClick={() => getMoreVideos(videos.nextPageToken)}
+      >
+        load more
+      </button>
     </div>
-  );
-};
+  )
+}
 
-export default VideosList;
+export default VideosList

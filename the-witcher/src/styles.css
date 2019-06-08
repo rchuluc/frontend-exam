@@ -266,7 +266,6 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
-  align-items: center;
   overflow-y: scroll;
   height: calc(100% - 58px);
 }
@@ -286,7 +285,13 @@ body {
   margin: 0 20px 48px 20px;
 }
 
-.video-grid button.btn {
+.video-grid .button-container {
+  display: flex;
+  width: 375px;
+  margin: 0 20px 48px 20px;
+}
+
+.button-container button {
   margin: auto;
 }
 

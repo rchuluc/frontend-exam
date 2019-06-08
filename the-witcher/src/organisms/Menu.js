@@ -2,7 +2,7 @@ import React from 'react'
 import MenuItems from '../molecules/MenuItems'
 import Logo from '../assets/logo_dark.png'
 
-const Menu = () => {
+const Menu = ({ action }) => {
   return (
     <div>
       <div className="aside">
@@ -12,7 +12,7 @@ const Menu = () => {
           className="img-logo-menu"
           src={Logo}
         />
-        <MenuItems />
+        <MenuItems action={action} />
       </div>
     </div>
   )

@@ -1,5 +1,5 @@
-import React from "react"
-import "../styles.css"
+import React from 'react'
+import '../styles.css'
 import { floatLabel } from '../scripts'
 
 const Input = ({ type, autocomplete, label }) => {
@@ -14,7 +14,7 @@ const Input = ({ type, autocomplete, label }) => {
         autoComplete={autocomplete}
       />
     </div>
-  );
-};
+  )
+}
 
-export default Input;
+export default Input

@@ -3,10 +3,10 @@ import VideoList from '../organisms/VideosList'
 import Menu from '../organisms/Menu'
 import VideoPlayer from '../molecules/VideoPlayer'
 
-const HomeTemplate = ({ data }) => {
+const HomeTemplate = ({ data, action }) => {
   return (
     <div className="container">
-      <Menu />
+      <Menu action={action} />
       <div className="content" id="content">
         <VideoList videos={data} />
       </div>

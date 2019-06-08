@@ -13,6 +13,7 @@ const VideoFrame = () => {
         frameBorder="0"
         width={width}
         height={height}
+        title="default"
       />
     </div>
   )

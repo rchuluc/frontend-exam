@@ -4,7 +4,6 @@ import VideoLabel from '../atoms/VideoLabel'
 import { handleOpenPlayer } from '../scripts'
 
 const VideoCard = ({ thumbnail, title, videoId }) => {
-  console.log(title)
   return (
     <div className="video-card" onClick={() => handleOpenPlayer(videoId)}>
       <VideoThumb image={thumbnail}>

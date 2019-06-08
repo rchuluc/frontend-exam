@@ -27,7 +27,9 @@ class Home extends React.PureComponent {
     if (Object.entries(this.state.videosList).length === 0) {
       return <Loading />
     } else {
-      return <HomeTemplate data={this.state.videosList} />
+      return (
+        <HomeTemplate action={this.props.action} data={this.state.videosList} />
+      )
     }
   }
 }

@@ -1,16 +1,15 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import { showVideos } from '../scripts'
 
-const MenuItems = () => {
+const MenuItems = ({ action }) => {
   return (
     <div className="btn-group">
       <button className="btn btn-block" onClick={showVideos}>
         trailers
       </button>
-      <Link to="/login" className="btn btn-block btn-transparent btn-route">
+      <button onClick={action} className="btn btn-transparent btn-block">
         logout
-      </Link>
+      </button>
     </div>
   )
 }

@@ -15,8 +15,22 @@ class App extends React.Component {
   constructor() {
     super()
     this.state = {
-      loaderAnimationEnd: false
+      loaderAnimationEnd: false,
+      logged: false
     }
+  }
+
+  handleLogin = () => {
+    this.setState({
+      logged: true
+    })
+    this.redirect()
+  }
+
+  handleLogout = () => {
+    this.setState({
+      logged: false
+    })
   }
 
   loaderEnd = () => {
@@ -28,15 +42,22 @@ class App extends React.Component {
   }
 
   redirect = () => {
+    console.log(window.location.pathname)
     if (this.state.loaderAnimationEnd === true) {
       if (window.location.pathname === '/') {
         return <Redirect to="/login" />
       }
     }
+    if (this.state.logged === true) {
+      return <Redirect to="/home" />
+    }
   }
 
   componentDidMount() {
     this.loaderEnd()
+    this.setState({
+      logged: false
+    })
   }
 
   render() {
@@ -46,8 +67,20 @@ class App extends React.Component {
         <div className="bg">
           <Switch>
             <Route exact path="/" component={Loading} />
-            <Route path="/login" component={Login} />
-            <Route path="/home" component={Home} />
+            <Route
+              path="/login"
+              render={() => <Login action={this.handleLogin} />}
+            />
+            <Route
+              path="/home"
+              render={() =>
+                this.state.logged === true ? (
+                  <Home action={this.handleLogout} />
+                ) : (
+                  <Redirect to="/login" />
+                )
+              }
+            />
           </Switch>
         </div>
       </Router>

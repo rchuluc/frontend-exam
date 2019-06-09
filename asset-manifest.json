@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/frontend-exam/static/css/main.65eef30a.chunk.css",
-    "main.js": "/frontend-exam/static/js/main.ad209214.chunk.js",
-    "main.js.map": "/frontend-exam/static/js/main.ad209214.chunk.js.map",
+    "main.js": "/frontend-exam/static/js/main.6a6b16c8.chunk.js",
+    "main.js.map": "/frontend-exam/static/js/main.6a6b16c8.chunk.js.map",
     "runtime~main.js": "/frontend-exam/static/js/runtime~main.297db1e8.js",
     "runtime~main.js.map": "/frontend-exam/static/js/runtime~main.297db1e8.js.map",
     "static/js/2.1130bb78.chunk.js": "/frontend-exam/static/js/2.1130bb78.chunk.js",
     "static/js/2.1130bb78.chunk.js.map": "/frontend-exam/static/js/2.1130bb78.chunk.js.map",
     "index.html": "/frontend-exam/index.html",
-    "precache-manifest.ddf8f49c31f80b33702993e94352c6f9.js": "/frontend-exam/precache-manifest.ddf8f49c31f80b33702993e94352c6f9.js",
+    "precache-manifest.0bcc2d9c889d4bac6a3499882c9754c4.js": "/frontend-exam/precache-manifest.0bcc2d9c889d4bac6a3499882c9754c4.js",
     "service-worker.js": "/frontend-exam/service-worker.js",
     "static/css/main.65eef30a.chunk.css.map": "/frontend-exam/static/css/main.65eef30a.chunk.css.map",
     "static/media/styles.css": "/frontend-exam/static/media/background.5b85f90b.png",

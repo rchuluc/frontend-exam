@@ -23,7 +23,7 @@ export const handleOpenPlayer = videoId => {
   player.classList.toggle('hide')
   const embeddedPlayer = document.getElementById('videoEmbedded')
   embeddedPlayer.title = `${videoId}`
-  embeddedPlayer.src = `http://www.youtube.com/embed/${videoId}?enablejsapi=1`
+  embeddedPlayer.src = `https://www.youtube.com/embed/${videoId}?enablejsapi=1`
 }
 
 export const floatLabel = () => {

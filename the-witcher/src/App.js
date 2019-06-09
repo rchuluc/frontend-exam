@@ -4,12 +4,7 @@ import Login from './pages/Login'
 import Home from './pages/Home'
 import Loading from './molecules/LoadingScreen'
 import { validateLogin } from './scripts'
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Redirect
-} from 'react-router-dom'
+import { HashRouter as Router, Switch, Route, Redirect } from 'react-router-dom'
 
 class App extends React.Component {
   constructor() {
@@ -43,11 +38,6 @@ class App extends React.Component {
   }
 
   redirect = () => {
-    if (this.state.loaderAnimationEnd === true) {
-      if (window.location.pathname === '/') {
-        return <Redirect to="/login" />
-      }
-    }
     if (this.state.logged === true) {
       return <Redirect to="/home" />
     }
@@ -62,11 +52,21 @@ class App extends React.Component {
 
   render() {
     return (
-      <Router>
+      <Router basename="/">
         {this.redirect()}
         <div className="bg">
           <Switch>
-            <Route exact path="/" component={Loading} />
+            <Route
+              exact
+              path="/"
+              render={() =>
+                this.state.loaderAnimationEnd === true ? (
+                  <Redirect to="/login" />
+                ) : (
+                  <Loading />
+                )
+              }
+            />
             <Route
               path="/login"
               render={() => <Login action={this.handleLogin} />}

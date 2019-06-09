@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/thewitcher/static/css/main.5bd7ac0b.chunk.css",
+    "main.js": "/thewitcher/static/js/main.db71ff38.chunk.js",
+    "main.js.map": "/thewitcher/static/js/main.db71ff38.chunk.js.map",
+    "runtime~main.js": "/thewitcher/static/js/runtime~main.8e23ca64.js",
+    "runtime~main.js.map": "/thewitcher/static/js/runtime~main.8e23ca64.js.map",
+    "static/js/2.3e6694e6.chunk.js": "/thewitcher/static/js/2.3e6694e6.chunk.js",
+    "static/js/2.3e6694e6.chunk.js.map": "/thewitcher/static/js/2.3e6694e6.chunk.js.map",
+    "index.html": "/thewitcher/index.html",
+    "precache-manifest.dc56c74924ba3e59ca014e158a78bb96.js": "/thewitcher/precache-manifest.dc56c74924ba3e59ca014e158a78bb96.js",
+    "service-worker.js": "/thewitcher/service-worker.js",
+    "static/css/main.5bd7ac0b.chunk.css.map": "/thewitcher/static/css/main.5bd7ac0b.chunk.css.map",
+    "static/media/styles.css": "/thewitcher/static/media/background.5b85f90b.png",
+    "static/media/circular-loader.cd9f8198.svg": "/thewitcher/static/media/circular-loader.cd9f8198.svg",
+    "static/media/loader.c2a66d2d.svg": "/thewitcher/static/media/loader.c2a66d2d.svg",
+    "static/media/logo_dark.png": "/thewitcher/static/media/logo_dark.42dbc4d1.png"
+  }
+}

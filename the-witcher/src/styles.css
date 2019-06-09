@@ -218,6 +218,20 @@ body {
   cursor: pointer;
 }
 
+.overlay-back-button {
+  display: none;
+  position: absolute;
+  align-self: flex-end;
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: white;
+  padding: 24px;
+  cursor: pointer;
+}
+
 .video-thumbnail {
   height: 222px;
   width: 375px;
@@ -297,6 +311,7 @@ body {
 
 .content {
   position: relative;
+  transition: 1s;
   left: 100%;
   border-left: 1px solid #4c4c4c;
   padding: 0 20px 20px 0;
@@ -327,6 +342,49 @@ body {
   animation: fade-out 1s ease-in-out both;
 }
 
-.enter-rl {
-  animation: enter-rl 1s ease-in-out both;
+@media (max-width: 575.98px) {
+  body {
+    overflow: hidden;
+  }
+
+  .bg {
+    background-position: -550px 0;
+  }
+
+  .aside {
+    width: 100vw;
+  }
+
+  .content {
+    position: absolute;
+    transition: 1s;
+    top: 0;
+    width: 100vw;
+    background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.75) 98.3%);
+  }
+
+  .video-thumbnail {
+    height: 20vh;
+    width: 75vw;
+  }
+
+  .overlay-back-button {
+    display: block;
+  }
+
+  .video-grid .video-card {
+    margin: 0 auto 48px auto;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .video-grid .video-card {
+    margin: 0 auto 48px auto;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .video-grid .video-card {
+    margin: 0 auto 48px auto;
+  }
 }

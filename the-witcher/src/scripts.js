@@ -10,12 +10,17 @@ export const handleClosePlayer = () => {
     '*'
   )
   const player = document.getElementById('player')
-  player.classList.add('hide')
+  player.classList.toggle('hide')
+}
+
+export const handleCloseTrailers = () => {
+  const content = document.getElementById('content')
+  content.style.transform = 'translateX(0)'
 }
 
 export const handleOpenPlayer = videoId => {
   const player = document.getElementById('player')
-  player.classList.remove('hide')
+  player.classList.toggle('hide')
   const embeddedPlayer = document.getElementById('videoEmbedded')
   embeddedPlayer.title = `${videoId}`
   embeddedPlayer.src = `http://www.youtube.com/embed/${videoId}?enablejsapi=1`
@@ -58,5 +63,10 @@ export const loadMoreVideos = async nextPageToken => {
 }
 
 export const showVideos = () => {
-  document.getElementById('content').classList.add('enter-rl')
+  const content = document.getElementById('content')
+  /* if (content.classList.contains('exit-rl')) {
+    content.classList.remove('exit-rl')
+  }
+  content.classList.add('enter-rl')*/
+  content.style.transform = 'translateX(-100vw)'
 }

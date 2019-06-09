@@ -24,12 +24,3 @@
     opacity: 1;
   }
 }
-
-@keyframes enter-rl {
-  from {
-    left: 100%;
-  }
-  to {
-    left: 0;
-  }
-}

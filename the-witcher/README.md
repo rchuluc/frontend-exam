@@ -6,4 +6,4 @@ This project use the [Atomic design](http://atomicdesign.bradfrost.com/) methodo
 
 ## Result
 
-The result has been deployed using GitHub Pages, [and can be found here](https://rchuluc.github.io/frontend-exam)
+The result has been deployed in GitHub Pages, [and can be found here](https://rchuluc.github.io/frontend-exam)

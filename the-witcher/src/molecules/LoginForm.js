@@ -4,8 +4,8 @@ import Input from '../atoms/Input'
 const LoginForm = ({ action }) => {
   return (
     <div className="form-group">
-      <Input label={'Email'} type={'email'} autocomplete={'on'} />
-      <Input label={'Password'} type={'password'} />
+      <Input label="Email" type="email" autocomplete="on" id="email" />
+      <Input label="Password" type="password" id="password" />
       <button onClick={action} className="btn">
         login
       </button>

@@ -5,7 +5,7 @@ import Logo from '../assets/logo_dark.png'
 const Menu = ({ action }) => {
   return (
     <div>
-      <div className="aside">
+      <div className="aside fade-in">
         <img
           draggable="false"
           alt="logo"

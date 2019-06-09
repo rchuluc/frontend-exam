@@ -3,7 +3,7 @@ import './styles.css'
 import Login from './pages/Login'
 import Home from './pages/Home'
 import Loading from './molecules/LoadingScreen'
-
+import { validateLogin } from './scripts'
 import {
   BrowserRouter as Router,
   Switch,
@@ -21,10 +21,11 @@ class App extends React.Component {
   }
 
   handleLogin = () => {
-    this.setState({
-      logged: true
-    })
-    this.redirect()
+    if (validateLogin()) {
+      this.setState({
+        logged: true
+      })
+    }
   }
 
   handleLogout = () => {
@@ -42,7 +43,6 @@ class App extends React.Component {
   }
 
   redirect = () => {
-    console.log(window.location.pathname)
     if (this.state.loaderAnimationEnd === true) {
       if (window.location.pathname === '/') {
         return <Redirect to="/login" />

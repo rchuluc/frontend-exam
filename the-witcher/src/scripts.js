@@ -64,9 +64,18 @@ export const loadMoreVideos = async nextPageToken => {
 
 export const showVideos = () => {
   const content = document.getElementById('content')
-  /* if (content.classList.contains('exit-rl')) {
-    content.classList.remove('exit-rl')
-  }
-  content.classList.add('enter-rl')*/
   content.style.transform = 'translateX(-100vw)'
+}
+
+export const validateLogin = () => {
+  const emailRe = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+  const emailField = document.getElementById('email')
+  const form = emailField.parentElement.parentElement
+  const passwordField = document.getElementById('password')
+  if (emailRe.test(emailField.value) && passwordField.value !== '') {
+    return true
+  } else {
+    form.classList.add('invalid')
+    return false
+  }
 }

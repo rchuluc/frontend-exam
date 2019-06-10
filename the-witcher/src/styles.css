@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&display=swap');
-@import './animations.css';
+@import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&display=swap");
+@import "./animations.css";
 
 :root {
-  --roboto: 'Roboto', sans-serif;
-  --roboto-condensed: 'Roboto Condensed', sans-serif;
+  --roboto: "Roboto", sans-serif;
+  --roboto-condensed: "Roboto Condensed", sans-serif;
 }
 
 body {
@@ -220,7 +220,7 @@ iframe {
   margin: -25px 38px;
   font-family: var(--roboto);
   font-size: 0.875rem;
-  content: 'Email or Password is incorrect';
+  content: "Email or Password is incorrect";
   color: #ff3509;
   animation: fade-in 350ms ease-in both;
 }
@@ -391,7 +391,7 @@ iframe {
   }
 
   .bg {
-    height: 680px;
+    height: 1000px;
     width: 100%;
     background-position: bottom right -200px;
   }

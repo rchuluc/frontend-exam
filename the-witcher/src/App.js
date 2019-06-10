@@ -54,7 +54,8 @@ class App extends React.Component {
     return (
       <Router basename="/">
         {this.redirect()}
-        <div className="bg">
+        <div className="bg" />
+        <div className="flex">
           <Switch>
             <Route
               exact

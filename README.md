@@ -1,9 +1,9 @@
 # About
 
-This project use **ReactJS** and **YouTube API**, the result code of this exam is in **the-witcher** folder in this repository.
+This project use **ReactJS** and **YouTube API**, the resultant code of this exam is in **the-witcher** folder in this repository.
 The application can bee seen [here](https://rchuluc.github.io/frontend-exam/#/)
 
-## Instructions
+## The exam
 
 ### InGaia Front-end Test 01
 Convert the following design to a Single Web Application (SPA):

@@ -48,8 +48,8 @@ iframe {
 
 .bg {
   position: absolute;
-  width: 100vw;
-  height: 100vh;
+  min-width: 100%;
+  min-height: 100%;
   display: flex;
   background-size: cover;
   background-image: radial-gradient(

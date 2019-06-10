@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/frontend-exam/static/css/main.65eef30a.chunk.css",
+    "main.css": "/frontend-exam/static/css/main.f3b90df3.chunk.css",
     "main.js": "/frontend-exam/static/js/main.fcaf0662.chunk.js",
     "main.js.map": "/frontend-exam/static/js/main.fcaf0662.chunk.js.map",
     "runtime~main.js": "/frontend-exam/static/js/runtime~main.297db1e8.js",
@@ -8,9 +8,9 @@
     "static/js/2.1130bb78.chunk.js": "/frontend-exam/static/js/2.1130bb78.chunk.js",
     "static/js/2.1130bb78.chunk.js.map": "/frontend-exam/static/js/2.1130bb78.chunk.js.map",
     "index.html": "/frontend-exam/index.html",
-    "precache-manifest.db806c9466903c9383afb7bac39d6df8.js": "/frontend-exam/precache-manifest.db806c9466903c9383afb7bac39d6df8.js",
+    "precache-manifest.c6b072b073b2bd13bad2b8807d9e5fea.js": "/frontend-exam/precache-manifest.c6b072b073b2bd13bad2b8807d9e5fea.js",
     "service-worker.js": "/frontend-exam/service-worker.js",
-    "static/css/main.65eef30a.chunk.css.map": "/frontend-exam/static/css/main.65eef30a.chunk.css.map",
+    "static/css/main.f3b90df3.chunk.css.map": "/frontend-exam/static/css/main.f3b90df3.chunk.css.map",
     "static/media/styles.css": "/frontend-exam/static/media/background.5b85f90b.png",
     "static/media/circular-loader.cd9f8198.svg": "/frontend-exam/static/media/circular-loader.cd9f8198.svg",
     "static/media/loader.c2a66d2d.svg": "/frontend-exam/static/media/loader.c2a66d2d.svg",

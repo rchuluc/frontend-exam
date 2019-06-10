@@ -1,6 +1,6 @@
 # About
 
-This project use **ReactJS** and **YouTube API**, and the result code of this exam is in **the-witcher** folder in this repository.
+This project use **ReactJS** and **YouTube API**, the result code of this exam is in **the-witcher** folder in this repository.
 The application can bee seen [here](https://rchuluc.github.io/frontend-exam/#/)
 
 ## Instructions
